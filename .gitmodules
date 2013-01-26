@@ -1,0 +1,11 @@
+[submodule "clojure-mode"]
+    path = clojure-mode
+    url = git@github.com:technomancy/clojure-mode
+
+[submodule "nrepl"]
+    path = nrepl.el
+    url = git@github.com:kingtim/nrepl.el
+
+[submodule "markdown"]
+    path = markdown-mode
+    url = git@http://jblevins.org/git/markdown-mode.git
