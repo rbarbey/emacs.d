@@ -12,3 +12,6 @@
 [submodule "paredit"]
 	path = paredit
 	url = https://github.com/emacsmirror/paredit.git
+[submodule "json-mode"]
+	path = json-mode
+	url = https://github.com/joshwnj/json-mode
