@@ -15,3 +15,6 @@
 [submodule "json-mode"]
 	path = json-mode
 	url = https://github.com/joshwnj/json-mode
+[submodule "acrolog-mode"]
+	path = acrolog-mode
+	url = https://github.com/rbarbey/acrolog-mode.git
