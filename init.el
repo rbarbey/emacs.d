@@ -17,6 +17,10 @@
 (add-to-list 'load-path "~/.emacs.d/json-mode")
 (require 'json-mode)
 
+;; button-lock
+(add-to-list 'load-path "~/.emacs.d/button-lock")
+
+;; Acrolog mode
 (add-to-list 'load-path "~/.emacs.d/acrolog-mode")
 (require 'acrolog-mode)
 

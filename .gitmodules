@@ -18,3 +18,6 @@
 [submodule "acrolog-mode"]
 	path = acrolog-mode
 	url = https://github.com/rbarbey/acrolog-mode.git
+[submodule "button-lock"]
+	path = button-lock
+	url = https://github.com/rolandwalker/button-lock.git
