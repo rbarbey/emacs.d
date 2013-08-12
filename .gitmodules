@@ -18,3 +18,12 @@
 [submodule "acrolog-mode"]
 	path = acrolog-mode
 	url = https://github.com/rbarbey/acrolog-mode.git
+[submodule "button-lock"]
+	path = button-lock
+	url = https://github.com/rolandwalker/button-lock.git
+[submodule "nodejs-mode"]
+	path = nodejs-mode
+	url = https://github.com/emacsmirror/nodejs-mode.git
+[submodule "coffee-mode"]
+	path = coffee-mode
+	url = https://github.com/defunkt/coffee-mode.git
