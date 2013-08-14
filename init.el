@@ -38,6 +38,26 @@
 (recentf-mode 1)
 (global-set-key "\C-xf" 'recentf-open-files)
 
+;; prerequisite for auto-complete
+(add-to-list 'load-path "~/.emacs.d/popup-el")
+
+;; Setting up Emacs as a Javascript editing environment for Fun or Profit
+;; http://blog.deadpansincerity.com/2011/05/setting-up-emacs-as-a-javascript-editing-environment-for-fun-and-profit/
+
+;; auto-complete mode
+(add-to-list 'load-path "~/.emacs.d/auto-complete")
+; Load the default configuration
+(require 'auto-complete-config)
+; Make sure we can find the dictionaries
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
+; Use dictionaries by default
+(setq-default ac-sources (add-to-list 'ac-sources 'ac-source-dictionary))
+(global-auto-complete-mode t)
+; Start auto-completion after 2 characters of a word
+(setq ac-auto-start 2)
+; case sensitivity is important when finding matches
+(setq ac-ignore-case nil)
+
 ;; node.js mode
 (add-to-list 'load-path "~/.emacs.d/nodejs-mode")
 (require 'nodejs-mode)
@@ -56,7 +76,7 @@ by using nxml's indentation rules."
   (save-excursion
     (nxml-mode)
     (goto-char begin)
-    (while (search-forward-regexp "\>[ \\t]*\<" nil t) 
+    (while (search-forward-regexp "\>[ \\t]*\<" nil t)
       (backward-char) (insert "\n"))
     (indent-region begin end))
   (message "Ah, much better!"))
@@ -71,10 +91,10 @@ and improved by Claus Brunzema:
  - when instead of if
 Use some lines along the following for getting this to work in the
 modes you want it to:
- 
-\(add-hook 'some-mode-hook  
-          '(lambda () 
-              (make-local-hook 'write-contents-hooks) 
+
+\(add-hook 'some-mode-hook
+          '(lambda ()
+              (make-local-hook 'write-contents-hooks)
                (add-hook 'write-contents-hooks 'ska-untabify nil t)))"
   (interactive)
   (save-excursion
