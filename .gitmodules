@@ -33,3 +33,6 @@
 [submodule "popup-el"]
 	path = popup-el
 	url = https://github.com/auto-complete/popup-el.git
+[submodule "lintnode"]
+	path = lintnode
+	url = https://github.com/davidmiller/lintnode.git
