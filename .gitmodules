@@ -37,5 +37,5 @@
 	path = lintnode
 	url = https://github.com/davidmiller/lintnode.git
 [submodule "jade-mode"]
-    path = jade-mode
-    url = https://github.com/brianc/jade-mode.git
+	path = jade-mode
+	url = https://github.com/brianc/jade-mode.git
