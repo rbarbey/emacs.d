@@ -1,0 +1,9 @@
+# Mac
+.DS_Store
+
+# auto-complete
+ac-comphist.dat
+auto-save-list/
+
+# Package manager
+elpa/
