@@ -1,3 +1,8 @@
+;; Melpa
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+
 ;; Clojure mode
 (add-to-list 'load-path "~/.emacs.d/clojure-mode")
 (require 'clojure-mode)
